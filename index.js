@@ -1,4 +1,4 @@
-const PassSigner = require('passsigner')
+const PassSigner = require('passsigner-js')
 
 const Pass = require('./pass')
 
