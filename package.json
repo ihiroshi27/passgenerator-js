@@ -1,6 +1,6 @@
 {
   "name": "passgenerator-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Apple Pass Generator for NodeJS",
   "main": "index.js",
   "repository": {
