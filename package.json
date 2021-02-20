@@ -1,0 +1,27 @@
+{
+  "name": "passgenerator",
+  "version": "1.0.0",
+  "description": "Apple Pass Generator for NodeJS",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ihiroshi27/passgenerator.git"
+  },
+  "keywords": [
+    "apple",
+    "wallet",
+    "pass",
+    "passkit",
+    "generator"
+  ],
+  "author": "Perayuth Thanyanon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ihiroshi27/passgenerator/issues"
+  },
+  "homepage": "https://github.com/ihiroshi27/passgenerator#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.3",
+    "passsigner": "^1.1.1"
+  }
+}
