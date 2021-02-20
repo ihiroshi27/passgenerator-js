@@ -30,14 +30,14 @@ To download your pass signing certificate, do the following:
 8. Download your new certificate. Double click to add this certificate to your Keychain.
 9. Right-click on your certificate, then click Export.
 
-### Options
-#### Constructor
+## Options
+### Constructor
 | Name        | Type   | Required | Description                                   |
 |-------------|--------|----------|-----------------------------------------------|
 | appleWWDRCA | String | Required | Path to Apple's WWDR Certificate.             |
 | signCert    | String | Required | Path to Pass Signing Certificate.             |
 | password    | String | Optional | The Password of the Pass Signing Certificate. |
-#### Method: add
+### Method: add
 | Name     | Type             | Required | Description               |
 |----------|------------------|----------|---------------------------|
 | filename | String           | Required | Filename with extension.  |
@@ -61,8 +61,8 @@ pass.add('icon@2x.png', './Generic.pass/icon@2x.png')
 pass.add('logo.png', './Generic.pass/logo.png')
 pass.add('logo@2x.png', './Generic.pass/logo@2x.png')
 
-pass.add('logo.png', './Generic.pass/th.lproj/logo.png')
-pass.add('logo@2x.png', './Generic.pass/th.lproj/logo@2x.png')
+pass.add('logo.png', './Generic.pass/th.lproj/logo.png', 'th')
+pass.add('logo@2x.png', './Generic.pass/th.lproj/logo@2x.png', 'th')
 
 pass.add('pass.json', './Generic.pass/pass.json')
 
