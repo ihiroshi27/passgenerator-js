@@ -8,7 +8,7 @@ Apple Pass Generator for NodeJS
 
 ## Install
 ```
-$ npm install passgenerator
+$ npm install passgenerator-js
 ```
 
 ## Get Started
@@ -46,7 +46,7 @@ To download your pass signing certificate, do the following:
 
 ## Usage
 ```js
-const PassGenerator = require('passgenerator')
+const PassGenerator = require('passgenerator-js')
 
 const passGenerator = new PassGenerator({
   appleWWDRCA: './AppleWWDRCA.cer',
