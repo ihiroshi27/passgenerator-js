@@ -38,13 +38,28 @@ To download your pass signing certificate, do the following:
 | signCert    | String | Required | Path to Pass Signing Certificate.             |
 | password    | String | Optional | The Password of the Pass Signing Certificate. |
 ### Method: add
-| Name     | Type             | Required | Description               |
-|----------|------------------|----------|---------------------------|
-| filename | String           | Required | Filename with extension.  |
-| data     | Buffer \| String | Required | File contents.            |
-| language | String           | Optional | Language Code (ISO 639-1) |
+| Name     | Type             | Required | Description                                    |
+|----------|------------------|----------|------------------------------------------------|
+| filename | String           | Required | Filename with extension.                       |
+| data     | Buffer \| String | Required | File path as string or file content as buffer. |
+| language | String           | Optional | Language Code (ISO 639-1).                     |
 
 ## Usage
+Directory structure of a sample pass.
+```
+.
+└── Sample.pass/
+    ├── icon.png
+    ├── icon@2x.png
+    ├── pass.json
+    ├── en.lproj/
+    │   ├── logo.png
+    │   └── logo@2x.png
+    └── th.lproj/
+        ├── logo.png
+        └── logo@2x.png
+```
+
 ```js
 const PassGenerator = require('passgenerator-js')
 
@@ -55,16 +70,16 @@ const passGenerator = new PassGenerator({
 
 const pass = passGenerator.createPass()
 
-pass.add('icon.png', './Generic.pass/icon.png')
-pass.add('icon@2x.png', './Generic.pass/icon@2x.png')
+pass.add('icon.png', './Sample.pass/icon.png')
+pass.add('icon@2x.png', './Sample.pass/icon@2x.png')
 
-pass.add('logo.png', './Generic.pass/logo.png')
-pass.add('logo@2x.png', './Generic.pass/logo@2x.png')
+pass.add('pass.json', './Sample.pass/pass.json')
 
-pass.add('logo.png', './Generic.pass/th.lproj/logo.png', 'th')
-pass.add('logo@2x.png', './Generic.pass/th.lproj/logo@2x.png', 'th')
+pass.add('logo.png', './Sample.pass/en.lproj/logo.png', 'en')
+pass.add('logo@2x.png', './Sample.pass/en.lproj/logo@2x.png', 'en')
 
-pass.add('pass.json', './Generic.pass/pass.json')
+pass.add('logo.png', './Sample.pass/th.lproj/logo.png', 'th')
+pass.add('logo@2x.png', './Sample.pass/th.lproj/logo@2x.png', 'th')
 
 const pkpass = pass.generate()
 
