@@ -61,6 +61,8 @@ Directory structure of a sample pass.
 ```
 
 ```js
+const fs = require('fs')
+
 const PassGenerator = require('passgenerator-js')
 
 const passGenerator = new PassGenerator({
@@ -83,7 +85,7 @@ pass.add('logo@2x.png', './Sample.pass/th.lproj/logo@2x.png', 'th')
 
 const pkpass = pass.generate()
 
-fs.writeFileSync('Generic.pkpass', pkpass)
+fs.writeFileSync('Sample.pkpass', pkpass)
 ```
 
 ## License
