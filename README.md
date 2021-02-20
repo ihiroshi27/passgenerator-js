@@ -74,9 +74,9 @@ fs.writeFileSync('Generic.pkpass', pkpass)
 ## License
 [MIT](LICENSE)
 
-[npm-image]: https://img.shields.io/npm/v/passgenerator.svg
-[npm-url]: https://npmjs.org/package/passgenerator
-[npm-downloads-image]: https://img.shields.io/npm/dm/passgenerator.svg
-[npm-downloads-url]: https://npmcharts.com/compare/passgenerator?minimal=true
+[npm-image]: https://img.shields.io/npm/v/passgenerator-js.svg
+[npm-url]: https://npmjs.org/package/passgenerator-js
+[npm-downloads-image]: https://img.shields.io/npm/dm/passgenerator-js.svg
+[npm-downloads-url]: https://npmcharts.com/compare/passgenerator-js?minimal=true
 [apple-developer-console]: https://developer.apple.com/account
 [apple-wallet-developer-guide]: https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/PassKit_PG/YourFirst.html
