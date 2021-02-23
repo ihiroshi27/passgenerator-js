@@ -4,7 +4,7 @@
 [![NPM Version][npm-image]][npm-url]
 [![NPM Downloads][npm-downloads-image]][npm-downloads-url]
 
-Apple Pass Generator for NodeJS
+Apple Pass Generator for Node.js
 
 ## Install
 ```
