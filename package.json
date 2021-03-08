@@ -1,8 +1,9 @@
 {
   "name": "passgenerator-js",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Apple Pass Generator for Node.js",
   "main": "index.js",
+  "typings": "index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ihiroshi27/passgenerator-js.git"
@@ -21,7 +22,7 @@
   },
   "homepage": "https://github.com/ihiroshi27/passgenerator-js#readme",
   "dependencies": {
-    "adm-zip": "^0.5.3",
-    "passsigner-js": "^1.1.2"
+    "adm-zip": "^0.5.4",
+    "passsigner-js": "^1.1.3"
   }
 }
