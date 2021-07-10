@@ -6,8 +6,8 @@ class PassGenerator {
   /**
    * 
    * @param {object} config
-   * @param {string} config.appleWWDRCA Path to Apple's WWDR Certificate.
-   * @param {string} config.signCert Path to Pass Signing Certificate.
+   * @param {string|Buffer} config.appleWWDRCA Path to Apple's WWDR Certificate.
+   * @param {string|Buffer} config.signCert Path to Pass Signing Certificate.
    * @param {string} [config.password] The Password of the Pass Signing Certificate.
    */
   constructor (config) {

@@ -7,7 +7,11 @@ declare class Pass {
 }
 
 declare class PassGenerator {
-  constructor (config: { appleWWDRCA: string, signCert: string, password?: string })
+  constructor (config: {
+    appleWWDRCA: string | Buffer,
+    signCert: string | Buffer,
+    password?: string
+  })
   createPass (): Pass
 }
 
