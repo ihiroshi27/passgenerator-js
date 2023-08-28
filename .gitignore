@@ -1,4 +1,8 @@
 node_modules
 
+*.pass
+
 *.cer
 *.p12
+
+*.pkpass
